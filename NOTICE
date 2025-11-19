@@ -1,0 +1,8 @@
+This project incorporates code and design ideas from the original
+"fluent-plugin-azureeventhubs" project (MIT-licensed) available at:
+
+  https://github.com/htgc/fluent-plugin-azureeventhubs
+
+All modifications in this repository are Copyright (c) 2025
+G. Rahul Nutakki and contributors, and are provided under the MIT
+license unless otherwise noted.
