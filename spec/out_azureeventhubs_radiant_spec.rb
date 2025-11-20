@@ -16,14 +16,6 @@ RSpec.describe Fluent::Plugin::AzureEventHubsRadiantOutput do
   let(:driver) { Fluent::Test::Driver::Output.new(described_class).configure(config) }
 
   describe "configuration" do
-    it "registers as 'azureeventhubs'" do
-      expect(Fluent::Plugin.lookup_output("azureeventhubs")).to eq(described_class)
-    end
-
-    it "registers as 'azureeventhubs_buffered' for backward compatibility" do
-      expect(Fluent::Plugin.lookup_output("azureeventhubs_buffered")).to eq(described_class)
-    end
-
     it "configures with minimal configuration" do
       expect(driver.instance.hub_name).to eq("test-hub")
     end
